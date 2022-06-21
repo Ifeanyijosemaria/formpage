@@ -1,0 +1,153 @@
+*{
+    z: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(bg-intro-desktop.png);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+.top-content {
+  margin:20px;
+  padding: 50px;
+  color:  white;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 40%;
+  margin: 4em auto;
+}
+.top-content p{
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+}
+h1{
+    margin-bottom: 22px;
+    font-weight: 700;
+    
+}
+.bottom-content{
+  width: 43%;
+  margin: 3em auto;
+}
+.first-content{
+    margin-bottom: 20px;
+    background-color: hsl(248, 32%, 49%);
+    color:  hsl(249, 20%, 93%);
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+}
+.form {
+  padding: 30px 40px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control input {
+  border: 1px solid hsl(249, 10%, 26%);
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  color:  hsl(249, 10%, 26%);
+}
+/* error message  icon styling */
+input:required:invalid{
+  outline: none;
+  border: none;
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url(icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+/*  */
+input:invalid+span{
+  display: inline;
+  color: hsl(0, 100%, 74%);
+  float: right;
+  font-size: 14px;
+}
+input:invalid{
+  outline: none;
+  border: none;
+  border: 1px solid;
+  color: hsl(154, 59%, 31%);
+}
+span{
+  display: none;
+}
+
+.form button {
+  background-color: hsl(154, 59%, 51%);
+  border: 1px solid hsl(249, 10%, 26%);
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.btm-para{
+    margin-top:20px;
+    color:  hsl(246, 25%, 77%);;
+}
+.tc{
+    color:rgb(150, 22, 22);
+}
+ 
+/* mobile screen size */
+@media screen and (max-width: 375px)
+ {
+  body{
+   background-image:url(bg-intro-mobile.png) ;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .top-content{
+    width: 100%;
+    text-align: center;
+  }
+  h1{
+    font-size:25px ;
+    font-weight: 700;
+  }
+  .top-content p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.bottom-content{
+  width: 100%;
+}
+.btm-para{
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  /* font-weight: 500; */
+}
+ }
